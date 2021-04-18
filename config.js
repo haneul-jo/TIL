@@ -2,13 +2,13 @@
 
 module.exports = {
     url: "https://haneul-jo.github.io",
-    pathPrefix: "/",
+    pathPrefix: "/TIL",
     title: "Blog by Haneul Jo",
     subtitle: "Today Haneul Learned",
     copyright: "© All rights reserved.",
     disqusShortname: "",
     postsPerPage: 4,
-    googleAnalyticsId: "UA-73379983-2",
+    googleAnalyticsId: "G-P0NE7Y008G",
     useKatex: false,
     menu: [
         {
@@ -44,7 +44,8 @@ module.exports = {
             codepen: "",
             youtube: "",
             soundcloud: "",
-            medium: ""
+            medium: "",
+            home: "11"
         }
     }
 };

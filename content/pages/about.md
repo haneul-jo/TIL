@@ -1,13 +1,19 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "/media/image-2.jpg"
+socialImage: "/media/aboutme.png"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+## 조하늘 (Haneul Jo)
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+백엔드 개발자로, 현재 Node로 서버 개발을 하고 있습니다.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+TIL은 Today I Learn 의 약어입니다. 오늘 내가 배운 것, 일일커밋이라고 부르기도 합니다. 저에게 맞는 기록, 정리를 하는 게 목표입니다.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+정리한 내용이 잘못된 경우 알려주시면 감사하겠습니다 🙂
+
+Skills experienced
+
+-   Languages: JavaScript, TypeScript, Java
+-   Backend: Node.js and Express
+-   Database: MySQL, MariaDB, Redis
