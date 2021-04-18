@@ -29,11 +29,11 @@ module.exports = {
         photo: "/photo.png",
         bio: "Today Haneul Learned",
         contacts: {
-            email: "",
+            email: "jh.neul72@gmail.com",
             facebook: "",
             telegram: "",
             twitter: "",
-            github: "https://github.com/haneul-jo",
+            github: "haneul-jo",
             rss: "",
             vkontakte: "",
             linkedin: "",
@@ -44,8 +44,7 @@ module.exports = {
             codepen: "",
             youtube: "",
             soundcloud: "",
-            medium: "",
-            home: "11"
+            medium: ""
         }
     }
 };
