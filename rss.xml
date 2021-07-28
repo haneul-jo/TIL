@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Haneul Jo]]></title><description><![CDATA[Today Haneul Learned]]></description><link>https://haneul-jo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 24 Jul 2021 05:33:52 GMT</lastBuildDate><item><title><![CDATA[객체 지향 프로그래밍 ( Object Oriented Programing ) 특징]]></title><description><![CDATA[상태와 행위로 이루어진 객체를 만들고, 그 객체들간의 상호작용을 통해 로직을 구성한다.]]></description><link>https://haneul-jo.github.io/posts/객체지향-프로그래밍-특징</link><guid isPermaLink="false">https://haneul-jo.github.io/posts/객체지향-프로그래밍-특징</guid><pubDate>Sat, 24 Jul 2021 05:27:28 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;상태와 행위로 이루어진 객체를 만들고, 그 객체들간의 상호작용을 통해 로직을 구성.&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Haneul Jo]]></title><description><![CDATA[Today Haneul Learned]]></description><link>https://haneul-jo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Jul 2021 14:47:14 GMT</lastBuildDate><item><title><![CDATA[타입스크립트 에러 처리 (Error Handling)]]></title><description><![CDATA[에러처리를 잘 하면 유지보수성, 안정성이 높다. 예측 가능한 에러와 예측 불가능한 에러를 구분하여 잘 처리하여야 한다.]]></description><link>https://haneul-jo.github.io/posts/typescript-error-handling</link><guid isPermaLink="false">https://haneul-jo.github.io/posts/typescript-error-handling</guid><pubDate>Wed, 28 Jul 2021 14:44:39 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;에러처리를 잘 하면 유지보수성, 안정성이 높다.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;예측 가능한 에러는 (expected error) &lt;code class=&quot;language-text&quot;&gt;error state&lt;/code&gt; 라고 부른다.&lt;/p&gt;
+&lt;p&gt;❓ 왜 &lt;code class=&quot;language-text&quot;&gt;error state&lt;/code&gt;라고 부르는지는 잘 모르겠으나, 명확한 에러인 경우는 사전에 미리 알고 대응이 가능하여 에러상태를 알수있다. 라는 표현이라고 생각하기로 했다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;예측 불가능한 에러 (unexpected error)는 &lt;code class=&quot;language-text&quot;&gt;exception&lt;/code&gt; 라고 부른다.&lt;/li&gt;
+&lt;li&gt;exception처리는 try → catch → finally 로 처리, 에러에 대한 처리를 할 수 있는 곳에서 catch 하는 것이 좋다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TypeScript &lt;code class=&quot;language-text&quot;&gt;catch(error)&lt;/code&gt;에 에러타입은 &lt;code class=&quot;language-text&quot;&gt;any&lt;/code&gt; 타입이다. 어떠한 타입정보도 전달되지 않아 &lt;code class=&quot;language-text&quot;&gt;instanceof&lt;/code&gt;를 사용할 수 없다. →❗️ 어떤 에러인지 파악이 불가능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;예상할 수 있는 (expected error), &lt;code class=&quot;language-text&quot;&gt;error state&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;type&lt;/code&gt;을 정의하여 사용한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SuccessState&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    result&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ErrorState&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    result&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    reason&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;timeout&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;unknown&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 에러는 이유를 알려주는 게 좋다.&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ResultState&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; SuccessState &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; ErrorState&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TimeoutError&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// throw&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ServerClientThrow&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;tryConnect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TimeoutError&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// state&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ServerClientState&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;tryConnect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ResultState &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            result&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            reason&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;timeout&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[객체 지향 프로그래밍 ( Object Oriented Programing ) 특징]]></title><description><![CDATA[상태와 행위로 이루어진 객체를 만들고, 그 객체들간의 상호작용을 통해 로직을 구성한다.]]></description><link>https://haneul-jo.github.io/posts/객체지향-프로그래밍-특징</link><guid isPermaLink="false">https://haneul-jo.github.io/posts/객체지향-프로그래밍-특징</guid><pubDate>Sat, 24 Jul 2021 05:27:28 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;상태와 행위로 이루어진 객체를 만들고, 그 객체들간의 상호작용을 통해 로직을 구성.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;객체&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;instance of a class&lt;/li&gt;

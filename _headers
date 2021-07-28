@@ -93,6 +93,18 @@
   Link: </TIL/component---src-templates-categories-list-template-js-2181ec47d28e5c35d3e9.js>; rel=preload; as=script
   Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </TIL/page-data/categories/page-data.json>; rel=preload; as=fetch; crossorigin
+/TIL/posts/typescript-error-handling
+  Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
+  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </TIL/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </TIL/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </TIL/dc6a8720040df98778fe970bf6c000a41750d3ae-b56c7ed930d47e54d4ed.js>; rel=preload; as=script
+  Link: </TIL/app-028fe28cc03466a53118.js>; rel=preload; as=script
+  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </TIL/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
+  Link: </TIL/component---src-templates-post-template-js-b5a7919d858047096026.js>; rel=preload; as=script
+  Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </TIL/page-data/posts/typescript-error-handling/page-data.json>; rel=preload; as=fetch; crossorigin
 /TIL/posts/타입스크립트-기본타입
   Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
   Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -105,18 +117,6 @@
   Link: </TIL/component---src-templates-post-template-js-b5a7919d858047096026.js>; rel=preload; as=script
   Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </TIL/page-data/posts/타입스크립트-기본타입/page-data.json>; rel=preload; as=fetch; crossorigin
-/TIL/posts/객체지향-프로그래밍-특징
-  Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
-  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </TIL/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
-  Link: </TIL/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
-  Link: </TIL/dc6a8720040df98778fe970bf6c000a41750d3ae-b56c7ed930d47e54d4ed.js>; rel=preload; as=script
-  Link: </TIL/app-028fe28cc03466a53118.js>; rel=preload; as=script
-  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </TIL/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
-  Link: </TIL/component---src-templates-post-template-js-b5a7919d858047096026.js>; rel=preload; as=script
-  Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </TIL/page-data/posts/객체지향-프로그래밍-특징/page-data.json>; rel=preload; as=fetch; crossorigin
 /TIL/pages/about/
   Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
   Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -129,6 +129,30 @@
   Link: </TIL/component---src-templates-page-template-js-d8aeb4e67f2e8af3e6cd.js>; rel=preload; as=script
   Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </TIL/page-data/pages/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/TIL/posts/객체지향-프로그래밍-특징
+  Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
+  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </TIL/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </TIL/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </TIL/dc6a8720040df98778fe970bf6c000a41750d3ae-b56c7ed930d47e54d4ed.js>; rel=preload; as=script
+  Link: </TIL/app-028fe28cc03466a53118.js>; rel=preload; as=script
+  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </TIL/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
+  Link: </TIL/component---src-templates-post-template-js-b5a7919d858047096026.js>; rel=preload; as=script
+  Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </TIL/page-data/posts/객체지향-프로그래밍-특징/page-data.json>; rel=preload; as=fetch; crossorigin
+/TIL/tag/error
+  Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
+  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </TIL/framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </TIL/532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </TIL/dc6a8720040df98778fe970bf6c000a41750d3ae-b56c7ed930d47e54d4ed.js>; rel=preload; as=script
+  Link: </TIL/app-028fe28cc03466a53118.js>; rel=preload; as=script
+  Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </TIL/cd95ea5cbd2c605f26db819f07999610c9ff4310-babf0c2595a064681f8b.js>; rel=preload; as=script
+  Link: </TIL/component---src-templates-tag-template-js-6f77d5f667fd901ff51f.js>; rel=preload; as=script
+  Link: </TIL/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </TIL/page-data/tag/error/page-data.json>; rel=preload; as=fetch; crossorigin
 /TIL/tag/type-script
   Link: </TIL/webpack-runtime-2da845538172a7a494c5.js>; rel=preload; as=script
   Link: </TIL/styles-407fe62976dc5310c43e.js>; rel=preload; as=script
